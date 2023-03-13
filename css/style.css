@@ -1,0 +1,73 @@
+:root{
+    --height: 0;
+    --ms: 0;
+}
+
+body{
+    background-color: rgb(39, 35, 35);
+    color: white;
+}
+
+.al-button{
+    background-color: blueviolet;
+    border-radius: 5px;
+    transition: transform 300ms;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+}
+
+.al-button:hover{
+    transform: scale(1.1);
+}
+
+#input{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.al-pointer{
+    cursor: pointer;
+}
+
+.animation{
+    animation: appear var(--ms) ease-out;
+}
+
+@keyframes appear{
+    from{
+        height: 0;
+    }
+    to{
+        height: var(--height);
+    }
+}
+
+.animation-reverse{
+    animation: disappear var(--ms) ease-out;
+}
+
+@keyframes disappear{
+    from{
+        height: var(--height);
+    }
+    to{
+        height: 0;
+    }
+}
+
+.al-none{
+    height: 0;
+}
+
+.al-decoration{
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.al-result-box{
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 0.5rem 1.2rem;
+}
