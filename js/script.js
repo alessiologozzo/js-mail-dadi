@@ -139,4 +139,7 @@ function play(){
         submitButton.addEventListener("click", start);
         resetButton.classList.add("d-none");
         namesList.classList.remove("animation", "animation-reverse");
+        namesList.classList.add("al-none");
+        span.classList.remove("al-decoration");
+        span.innerHTML = "...";
     }
