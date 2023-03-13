@@ -132,6 +132,7 @@ function play(){
         label.classList.remove("d-none");
         input.classList.remove("d-none");
         input.value = "";
+        input.placeholder = "Inserisci mail...";
         namesButton.classList.remove("d-none");
         submitButton.textContent = "Login";
         submitButton.removeEventListener("click", play);
