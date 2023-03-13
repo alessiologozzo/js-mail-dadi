@@ -138,9 +138,5 @@ function play(){
         submitButton.removeEventListener("click", play);
         submitButton.addEventListener("click", start);
         resetButton.classList.add("d-none");
-        
-        if(namesList.contains("animation"))
-            namesList.classList.remove("animation");
-        else
-            namesList.classList.remove("animation-reverse");
+        namesList.classList.remove("animation", "animation-reverse");
     }
