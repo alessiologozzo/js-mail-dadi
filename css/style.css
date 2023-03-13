@@ -27,6 +27,11 @@ body{
     border-radius: 5px;
 }
 
+::placeholder{
+    color: white;
+    opacity: 0.8;
+}
+
 .al-pointer{
     cursor: pointer;
 }
